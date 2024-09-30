@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.27+commit.40a35a09"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Cyfrin Updraft Challenges/3.22.sol": "OnlyAfter"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Cyfrin Updraft Challenges/3.22.sol": {
+			"keccak256": "0x3f68fca2f769e061ed3ca14de1a2dffc8c1c8cc47bca09730867b17b75a318de",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://402147929b10f273de28984caff71fd6e855f24ae09348086dc084e88a8239ab",
+				"dweb:/ipfs/QmZY8KgaBNpyV5pgTcdikC23gKm65h1sguRbuwUpkCdeLS"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.27+commit.40a35a09"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Cyfrin Updraft Challenges/3.15/MathLibrary.sol": "MathLibrary"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Cyfrin Updraft Challenges/3.15/MathLibrary.sol": {
+			"keccak256": "0xe4bea95646f55e5c7b1185d69a564717da3cb4e07cd533fdd6da91c9a6ebf6cd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://738986ab2877f5ccd1965907709c8586125dadbb08f3edd2442c0d3515212d09",
+				"dweb:/ipfs/QmVm2ZX516wFNnW4ujE7PCKGHFxtcrNujcVUhhv8NFRmoT"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,81 @@
+{
+	"compiler": {
+		"version": "0.8.27+commit.40a35a09"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "fund",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Cyfrin Updraft Challenges/3.24.sol": "FundMe"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0x257a8d28fa83d3d942547c8e129ef465e4b5f3f31171e7be4739a4c98da6b4f0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6d39e11b1dc7b9b8ccdabbc9be442ab7cda4a81c748f57e316dcb1bcb4a28bf9",
+				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
+			]
+		},
+		"Cyfrin Updraft Challenges/3.24.sol": {
+			"keccak256": "0x759a3cec1e11d9fbf316a37eae8893118f0e563535c6511025a62877924c9891",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2f06b4aaa1482e68e1f552f50eebc0316bdabd28987bdd0cf0a780a520ce377e",
+				"dweb:/ipfs/QmSGxtnZCpfoYqiU7cGED58kH54p352YsG9PieViXCPx9C"
+			]
+		},
+		"PriceConverter.sol": {
+			"keccak256": "0xf7f154bdcb0b8d22a46e6e48dccd89afde2f2d264afccb1cb6b5962893e2aa23",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3096656e0e6e5e86b500a744029169fd726a68f2df6c97500a9aec3b579bda1c",
+				"dweb:/ipfs/QmY5pqXF36FdD1ExePUJDRz2fA57Y41PQt1VKfb5nrZFhC"
+			]
+		}
+	},
+	"version": 1
+}

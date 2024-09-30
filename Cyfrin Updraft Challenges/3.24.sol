@@ -1,0 +1,44 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.27;
+
+import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol";
+import {PriceConverter} from "../PriceConverter.sol"; 
+
+using PriceConverter for uint256; 
+
+contract FundMe{
+    
+    uint256 constant MINIMUM_USD = 5;
+    uint256 constant MAXIMUM_USD = 10; 
+    address[] funders;
+    mapping(address=>uint256) addressToAmountFunded; 
+    address immutable i_owner;
+    uint256 immutable i_time;
+
+
+    constructor(){
+        i_owner = msg.sender; 
+    }
+
+    function fund() public payable {
+        require(msg.value.getConversionRate() >= MINIMUM_USD, "less than 5 dollars sent");
+        funders.push(msg.sender); 
+        addressToAmountFunded[msg.sender] += msg.value; 
+    }
+
+    function withdraw() public onlyOwner {
+        uint256 funderIndex;
+        for(funderIndex == 0 ; funderIndex > funders.length; funderIndex++){
+            address funder = funders[funderIndex]; 
+            addressToAmountFunded[funder] = 0; 
+        }
+        funders = new address[](0); 
+        (bool success, ) = payable(msg.sender).call{value: address(this).balance}("");
+        require(success, "Call failed");
+    }
+
+    modifier onlyOwner() {
+        require(msg.sender == i_owner, "Not Owner"); 
+        _;
+    }
+}
